@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saffron & Ember — a modern multi-cuisine dining experience.">
+  <title>Saffron & Ember | Multi-Cuisine Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <span>✦ Open today 11:30 AM – 11:00 PM</span>
+    <span>Free dessert on orders above ₹1,500</span>
+  </div>
+
+  <header class="header" id="home">
+    <a class="brand" href="#home" aria-label="Saffron and Ember home">
+      <span class="brand-mark">S&E</span>
+      <span>
+        <strong>SAFFRON & EMBER</strong>
+        <small>Kitchen • Bar • Stories</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#experience">Experience</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">☼</button>
+      <button class="cart-btn" id="cartBtn">Cart <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">A TABLE WITHOUT BORDERS</p>
+        <h1>Many cultures.<br><em>One unforgettable table.</em></h1>
+        <p class="hero-copy">A modern multi-cuisine restaurant where Indian fire meets Mediterranean freshness, Asian craft and European comfort.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Explore the menu</a>
+          <button class="btn btn-light" id="reserveHero">Reserve a table</button>
+        </div>
+        <div class="hero-note">
+          <span>★ 4.9</span>
+          <span>•</span>
+          <span>12+ cuisines</span>
+          <span>•</span>
+          <span>Chef-led kitchen</span>
+        </div>
+      </div>
+      <div class="scroll-cue">SCROLL TO DISCOVER ↓</div>
+    </section>
+
+    <section class="story section" id="about">
+      <div class="section-label">01 — OUR STORY</div>
+      <div class="story-grid">
+        <div>
+          <p class="eyebrow">NOT JUST A RESTAURANT</p>
+          <h2>Every plate has<br><em>a place and a story.</em></h2>
+        </div>
+        <div class="story-copy">
+          <p>We built Saffron & Ember around one simple idea: the best meal is the one that makes you curious. Our kitchen travels across continents, bringing together familiar comfort and unexpected combinations.</p>
+          <p>Our chefs source seasonal produce, slow-cook our signature spices and finish every dish to order. The result is food that feels adventurous without ever losing its soul.</p>
+          <a class="text-link" href="#experience">Discover the experience →</a>
+        </div>
+      </div>
+      <div class="story-stats">
+        <div><strong>12+</strong><span>Cuisines</span></div>
+        <div><strong>38</strong><span>Signature dishes</span></div>
+        <div><strong>4.9</strong><span>Guest rating</span></div>
+        <div><strong>15</strong><span>Years of craft</span></div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-label">02 — THE MENU</div>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">COOKED WITH INTENTION</p>
+          <h2>Choose your <em>journey.</em></h2>
+        </div>
+        <p class="heading-copy">Explore dishes by cuisine, dietary preference or search for exactly what you are craving.</p>
+      </div>
+
+      <div class="menu-toolbar">
+        <div class="cuisine-tabs" id="cuisineTabs">
+          <button class="tab active" data-cuisine="All">All</button>
+          <button class="tab" data-cuisine="Indian">Indian</button>
+          <button class="tab" data-cuisine="Italian">Italian</button>
+          <button class="tab" data-cuisine="Asian">Asian</button>
+          <button class="tab" data-cuisine="Mediterranean">Mediterranean</button>
+          <button class="tab" data-cuisine="Mexican">Mexican</button>
+        </div>
+        <div class="search-box">
+          <span>⌕</span>
+          <input id="menuSearch" type="search" placeholder="Search dishes...">
+        </div>
+      </div>
+
+      <div class="diet-filters">
+        <button class="diet active" data-diet="all">All</button>
+        <button class="diet" data-diet="veg">🌿 Vegetarian</button>
+        <button class="diet" data-diet="vegan">Vegan</button>
+        <button class="diet" data-diet="spicy">🌶 Spicy</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+      <p class="empty-state" id="emptyState">No dishes found. Try another search or cuisine.</p>
+    </section>
+
+    <section class="special section" id="experience">
+      <div class="special-image"></div>
+      <div class="special-content">
+        <div class="section-label">03 — TONIGHT'S FEATURE</div>
+        <p class="eyebrow">CHEF'S TABLE</p>
+        <h2>The Ember <em>Tasting Journey</em></h2>
+        <p>Six courses. Four cuisines. One evolving menu inspired by what is freshest today. Served at the chef's counter with a short story behind every plate.</p>
+        <div class="feature-list">
+          <div><span>01</span><strong>Welcome bite</strong><small>Chef's surprise</small></div>
+          <div><span>02</span><strong>Fire & smoke</strong><small>Seasonal starter</small></div>
+          <div><span>03</span><strong>Across the sea</strong><small>Catch of the day</small></div>
+          <div><span>04</span><strong>Sweet finale</strong><small>Signature dessert</small></div>
+        </div>
+        <button class="btn btn-primary" id="tastingBtn">Join the chef's table</button>
+      </div>
+    </section>
+
+    <section class="experience section">
+      <div class="section-label">04 — MORE THAN DINNER</div>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <span class="experience-icon">♨</span>
+          <h3>Live Fire Kitchen</h3>
+          <p>Watch our chefs grill, roast and finish signature dishes over open flame.</p>
+        </article>
+        <article class="experience-card">
+          <span class="experience-icon">◌</span>
+          <h3>Build Your Bowl</h3>
+          <p>Pick a base, protein, sauce and crunch. Create a plate that is completely yours.</p>
+        </article>
+        <article class="experience-card">
+          <span class="experience-icon">✦</span>
+          <h3>Secret Menu</h3>
+          <p>Ask your server for the password and discover dishes that never appear online.</p>
+        </article>
+        <article class="experience-card">
+          <span class="experience-icon">♢</span>
+          <h3>Private Dining</h3>
+          <p>Intimate celebrations, business dinners and chef-curated menus for your group.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">05 — INSIDE S&E</div>
+          <h2>A little taste<br><em>before you arrive.</em></h2>
+        </div>
+        <p class="heading-copy">Warm lights, open flames and plates designed to be remembered.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-large"></div>
+        <div class="gallery-item gallery-two"></div>
+        <div class="gallery-item gallery-three"></div>
+        <div class="gallery-item gallery-four"></div>
+      </div>
+    </section>
+
+    <section class="reservation-banner">
+      <div>
+        <p class="eyebrow">YOUR TABLE IS WAITING</p>
+        <h2>Good food tastes better<br><em>with good company.</em></h2>
+      </div>
+      <button class="btn btn-light" id="reserveBtn">Reserve a table</button>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-grid">
+        <div>
+          <div class="section-label">06 — FIND US</div>
+          <h2>Come hungry.<br><em>Leave inspired.</em></h2>
+        </div>
+        <div class="contact-info">
+          <div><span>ADDRESS</span><p>18 Ember Street, Downtown<br>Your City, India</p></div>
+          <div><span>HOURS</span><p>Mon–Thu 11:30 AM–10:30 PM<br>Fri–Sun 11:30 AM–11:00 PM</p></div>
+          <div><span>CONTACT</span><p>+91 98765 43210<br>hello@saffronember.com</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand">
+      <span class="brand-mark">S&E</span>
+      <span><strong>SAFFRON & EMBER</strong><small>Kitchen • Bar • Stories</small></span>
+    </div>
+    <p>© 2026 Saffron & Ember. Crafted for curious appetites.</p>
+    <div class="socials"><a href="#">IG</a><a href="#">FB</a><a href="#">X</a></div>
+  </footer>
+
+  <!-- Cart Drawer -->
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-head">
+      <h3>Your order</h3>
+      <button class="close-btn" id="closeCart">×</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="cart-empty">Your cart is waiting for something delicious.</p>
+    </div>
+    <div class="cart-footer">
+      <div><span>Subtotal</span><strong id="cartTotal">₹0</strong></div>
+      <button class="btn btn-primary full" id="checkoutBtn">Proceed to checkout</button>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- Reservation Modal -->
+  <div class="modal" id="reservationModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close-btn modal-close" id="closeModal">×</button>
+      <p class="eyebrow">RESERVE YOUR EXPERIENCE</p>
+      <h2>Save a seat at<br><em>our table.</em></h2>
+      <form id="reservationForm">
+        <div class="form-grid">
+          <label>Name<input required type="text" placeholder="Your name"></label>
+          <label>Phone<input required type="tel" placeholder="+91"></label>
+          <label>Date<input required type="date" id="bookingDate"></label>
+          <label>Time<select required><option value="">Select time</option><option>12:30 PM</option><option>1:30 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></label>
+          <label>Guests<select required><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6+ guests</option></select></label>
+          <label>Occasion<select><option>Just dinner</option><option>Birthday</option><option>Anniversary</option><option>Business</option></select></label>
+        </div>
+        <label>Special request<textarea rows="3" placeholder="Dietary requirements, celebration notes..."></textarea></label>
+        <button class="btn btn-primary full" type="submit">Confirm reservation</button>
+      </form>
+      <p class="form-success" id="formSuccess">✓ Reservation request received. We’ll contact you shortly.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
